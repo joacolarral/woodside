@@ -1,0 +1,34 @@
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 38px;
+  font-weight: 100;
+}
+
+.swiper-button-next {
+  left: 95%;
+}
+
+.swiper-button-prev {
+  right: 95%;
+  left: unset;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 900px) {
+  .swiper-button-next {
+    left: 90%;
+  }
+  .swiper-button-prev {
+    right: 90%;
+    left: unset;
+  }
+}

@@ -1,0 +1,126 @@
+@import "../../styles/variables.scss";
+@import "../../styles/devices.scss";
+
+.container {
+  background-color: $secondary_color_light;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.sectionBrandSectionContainer {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sectionBrandsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  gap: 10px;
+
+  p {
+    font-weight: 400;
+    font-size: 0.75em;
+    width: 16em;
+  }
+}
+
+.linksText {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.socialMediaContainer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.socialMediaWithoutText {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.whatsapp {
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
+@include mobile {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: $container-space-around-mobile;
+    gap: 2rem;
+  }
+
+  .sectionBrandsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sectionBrandSectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+  }
+
+  .socialMediaContainer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .socialMediaWithoutText {
+    justify-content: space-between;
+  }
+
+  .linksText {
+    p {
+      width: 100%;
+    }
+  }
+
+  .horizontalLine {
+    display: none;
+  }
+
+  .whatsapp {
+    a {
+      flex-direction: row;
+      gap: 2rem;
+    }
+    p {
+      font-weight: 600;
+      font-size: 1rem !important;
+      letter-spacing: 2px;
+    }
+  }
+}

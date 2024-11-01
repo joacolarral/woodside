@@ -1,0 +1,19 @@
+// Light mode colors
+$primary_color_light: rgb(255, 255, 255);
+$secondary_color_light: rgba(33, 39, 54, 1);
+$background_secondary_color: rgb(255, 255, 255);
+$background_light_primary: linear-gradient(
+  270deg,
+  #ffffff 43.22%,
+  #d6dbe4 108.88%
+);
+$background_light_secondary: #fff;
+$container-space-around: 7rem 7rem 7rem 5rem;
+$container-space-vertical-left: 7rem 0 7rem 5rem;
+$space-left: 5rem;
+$space-left-mobile: 1.5rem;
+$container-space-around-mobile: 3.5rem 1.5rem;
+$container-space-around-horizontal-mobile: 0 1.5rem;
+$container-space-vertical-mobile: 3.5rem 0;
+$container-space-vertical-left-mobile: 3.5rem 0 3.5rem 1.5rem;
+$disabled-color: rgb(167, 169, 173);

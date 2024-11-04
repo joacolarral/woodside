@@ -15,7 +15,9 @@ const buildSlides = () => {
   const images = [img1, img2, img3];
   return images.map((image, index) => ({
     id: index + 1,
-    value: <Image key={index} fill src={image.src} alt="image" />,
+    value: (
+      <Image key={index} fill unoptimized={true} src={image.src} alt="image" />
+    ),
   }));
 };
 

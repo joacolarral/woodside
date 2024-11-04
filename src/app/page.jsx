@@ -6,6 +6,7 @@ import IconWithText from "@/app/components/iconWithText";
 import Whatsapp from "@/app/images/whatsapp.svg";
 import Instagram from "@/app/images/zocalo_Logo_Ig.svg";
 import Markup from "@/app/images/zocalo_locacion.svg";
+import Head from "next/head";
 
 const Info = [
   {
@@ -28,6 +29,9 @@ const Info = [
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.description}>
         <div className={styles.bgImage}>
           <Image src={BG_IMAGE} alt="" layout="fill" objectFit="cover" />

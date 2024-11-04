@@ -17,7 +17,16 @@ const buildSlides = () => {
   const images = [img1, img2];
   return images.map((image, index) => ({
     id: index + 1,
-    value: <Image key={index} fill src={image.src} alt="image" />,
+    value: (
+      <Image
+        key={index}
+        width={1440}
+        height={900}
+        quality={100}
+        src={image.src}
+        alt="image"
+      />
+    ),
   }));
 };
 

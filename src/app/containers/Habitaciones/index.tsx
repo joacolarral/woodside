@@ -1,32 +1,44 @@
 "use client";
 
-import Image from "next/image";
 import React, { useMemo } from "react";
 
 import Carousel from "@/app/components/Carousel";
 
-import img1 from "@/app/images/habitaciones/habitaciones-1.jpg";
-import img2 from "@/app/images/habitaciones/habitaciones-2.jpg";
-// import img3 from "@/app/images/trip/trip_3.jpg";
-// import img4 from "@/app/images/trip/trip_4.jpg";
-// import img5 from "@/app/images/trip/trip_5.jpg";
-// import useDeviceType from "@/app/hooks/useDeviceType";
+import img_horizontal_1 from "@/app/images/habitaciones/horizontal/habitaciones_horizontal_1.jpg";
+import img_horizontal_2 from "@/app/images/habitaciones/horizontal/habitaciones_horizontal_2.jpg";
+import img_horizontal_3 from "@/app/images/habitaciones/horizontal/habitaciones_horizontal_3.jpg";
+import img_horizontal_4 from "@/app/images/habitaciones/horizontal/habitaciones_horizontal_4.jpg";
+import img_vertical_1 from "@/app/images/habitaciones/vertical/habitaciones_vertical_1.png";
+import img_vertical_2 from "@/app/images/habitaciones/vertical/habitaciones_vertical_2.png";
+import img_vertical_3 from "@/app/images/habitaciones/vertical/habitaciones_vertical_3.jpg";
+import img_vertical_4 from "@/app/images/habitaciones/vertical/habitaciones_vertical_4.png";
+import img_vertical_5 from "@/app/images/habitaciones/vertical/habitaciones_vertical_5.jpg";
+import useDeviceType from "@/app/hooks/useDeviceType";
+import useBuildSlides from "@/app/hooks/useBuildSlides";
 import Container from "@/app/components/Container";
 
-const buildSlides = () => {
-  const images = [img1, img2];
-  return images.map((image, index) => ({
-    id: index + 1,
-    value: (
-      <Image key={index} fill unoptimized={true} src={image.src} alt="image" />
-    ),
-  }));
-};
+const imagesHorizontal = [
+  img_horizontal_1,
+  img_horizontal_2,
+  img_horizontal_3,
+  img_horizontal_4,
+];
+const imagesVertical = [
+  img_vertical_1,
+  img_vertical_2,
+  img_vertical_3,
+  img_vertical_4,
+  img_vertical_5,
+];
 
 const Habitaciones = () => {
-  // const device = useDeviceType();
+  const device = useDeviceType();
+  const imagesToMap = useMemo(
+    () => (device && device === "mobile" ? imagesVertical : imagesHorizontal),
+    [device]
+  );
 
-  const slides = useMemo(() => buildSlides(), []);
+  const slides = useBuildSlides(device, imagesToMap);
 
   return (
     <Container id="habitaciones">

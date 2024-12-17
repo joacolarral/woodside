@@ -1,11 +1,11 @@
 import Link from "next/link";
-import Cabalgatas from "../containers/Cabalgatas";
-import FirstPage from "../containers/FirstPage";
-import Footer from "../containers/Footer";
-import Habitaciones from "../containers/Habitaciones";
+import Cabalgatas from "./containers/Cabalgatas";
+import FirstPage from "./containers/FirstPage";
+import Footer from "./containers/Footer";
+import Habitaciones from "./containers/Habitaciones";
 // import Sponsors from "./containers/Sponsors";
-import Surftrip from "../containers/Surftrip";
-import WS_Sessions from "../containers/WS_Sessions";
+import Surftrip from "./containers/Surftrip";
+import WS_Sessions from "./containers/WS_Sessions";
 import WHASTAPP_LOGO from "@/app/images/whatsapp.svg";
 import Image from "next/image";
 

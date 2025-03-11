@@ -21,7 +21,7 @@ export default function Home() {
       <Footer />
       <div className="whatsapp">
         <Link
-          href="https://api.whatsapp.com/send/?phone=5492236207101&text&app_absent=0"
+          href="https://api.whatsapp.com/send/?phone=5492235679350&text&app_absent=0"
           target="_blank"
         >
           <Image src={WHASTAPP_LOGO} alt="Whatsapp" />

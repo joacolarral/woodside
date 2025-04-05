@@ -12,6 +12,7 @@ import img_vertical_1 from "@/app/images/ws_sessions/vertical/ws_sessions_vertic
 import img_vertical_2 from "@/app/images/ws_sessions/vertical/ws_sessions_vertical_2.jpg";
 import img_vertical_3 from "@/app/images/ws_sessions/vertical/ws_sessions_vertical_3.jpg";
 import img_vertical_4 from "@/app/images/ws_sessions/vertical/ws_sessions_vertical_4.jpg";
+import img_vertical_5 from "@/app/images/ws_sessions/vertical/ws_sessions_vertical_5.jpg";
 import Container from "@/app/components/Container";
 import useDeviceType from "@/app/hooks/useDeviceType";
 import useBuildSlides from "@/app/hooks/useBuildSlides";
@@ -27,6 +28,7 @@ const imagesVertical = [
   img_vertical_2,
   img_vertical_3,
   img_vertical_4,
+  img_vertical_5,
 ];
 
 const WS_Sessions = () => {

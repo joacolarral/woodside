@@ -14,7 +14,7 @@ import img_vertical_1 from "@/app/images/surftrip/vertical/surftrip_vertical_1.j
 import img_vertical_2 from "@/app/images/surftrip/vertical/surftrip_vertical_2.jpg";
 import img_vertical_3 from "@/app/images/surftrip/vertical/surftrip_vertical_3.jpg";
 import img_vertical_4 from "@/app/images/surftrip/vertical/surftrip_vertical_4.jpg";
-import img_vertical_5 from "@/app/images/surftrip/vertical/surftrip_vertical_4.jpg";
+import img_vertical_5 from "@/app/images/surftrip/vertical/surftrip_vertical_5.jpg";
 import Container from "@/app/components/Container";
 import useDeviceType from "@/app/hooks/useDeviceType";
 import useBuildSlides from "@/app/hooks/useBuildSlides";

@@ -8,6 +8,7 @@ import Surftrip from "./containers/Surftrip";
 import WS_Sessions from "./containers/WS_Sessions";
 import WHASTAPP_LOGO from "@/app/images/whatsapp.svg";
 import Image from "next/image";
+import Otros from "./containers/Otros";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Surftrip />
       <Cabalgatas />
       <WS_Sessions />
+      <Otros />
       {/* <Sponsors /> */}
       <Footer />
       <div className="whatsapp">

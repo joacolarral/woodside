@@ -9,4 +9,5 @@ export const NAVBAR_ITEMS = {
   SURFTRIP: "surftrip",
   CABALGATAS: "cabalgatas",
   WS_SESSIONS: "ws_sessions",
+  OTROS: "otros",
 };
